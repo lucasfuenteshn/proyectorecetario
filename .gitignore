@@ -1,0 +1,163 @@
+# =====================================
+# .gitignore for iTEE Project
+# =====================================
+
+# =====================================
+# LARGE FILES - Videos and Heavy Assets
+# =====================================
+
+# All video files (can be very large)
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mkv
+
+# Large image files
+*.psd
+*.ai
+*.sketch
+*.fig
+*.xd
+
+# Large PDFs (design files)
+*.pdf
+
+# Audio files
+*.mp3
+*.wav
+*.flac
+*.aac
+
+# Archive files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# Keep directory structure but ignore large content
+# Videos directory structure maintained
+recursos/videos/**/*.mp4
+recursos/videos/**/*.avi
+recursos/videos/**/*.mov
+# Ignore ALL files in archivos de contexto folder
+archivos\ de\ contexto/*
+archivos\ de\ contexto/**/*
+archivos\ de\ contexto/*.txt
+archivos\ de\ contexto/*.pdf
+archivos\ de\ contexto/*.psd
+archivos\ de\ contexto/*.ai
+archivos\ de\ contexto/*.sketch
+archivos\ de\ contexto/*.png
+archivos\ de\ contexto/*.jpg
+archivos\ de\ contexto/*.jpeg
+archivos\ de\ contexto/*.gif
+archivos\ de\ contexto/*.docx
+archivos\ de\ contexto/*.md
+
+# But keep these important files and directories
+!recursos/
+!recursos/videos/
+!recursos/videos/*/
+!recursos/videos/*/README.md
+!archivos\ de\ contexto/
+!archivos\ de\ contexto/README.md
+
+# =====================================
+# DEVELOPMENT FILES
+# =====================================
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+*.lnk
+
+# IDE and Editor files
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Node.js dependencies (if added later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Build outputs and dist files
+dist/
+build/
+out/
+*.min.js
+*.min.css
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory
+coverage/
+*.lcov
+
+# Dependency directories
+jspm_packages/
+
+# Cache directories
+.npm
+.eslintcache
+.cache/
+.parcel-cache/
+
+# Environment variables and sensitive data
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.supabase
+supabase/.env
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup and temporary files
+*.bak
+*.backup
+*.tmp
+tmp/
+temp/
+
+# Documentation builds
+docs/_build/
+
+# Local configuration files
+config.local.js
+config.local.json
+
+# Test coverage
+coverage/
